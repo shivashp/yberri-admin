@@ -1,0 +1,56 @@
+/*
+  primary: '',
+  secondary: #282E3E;
+*/
+
+#yberri-sidebar {
+  background: #282E3E;
+}
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  background: #282E3E;
+}
+
+#yberri-dashboard .logo, #yberri-dashboard .small-logo {
+  height: 32px;
+  color:white;
+  text-align: center;
+  font-size:20px;
+  margin: 16px;
+}
+#yberri-dashboard .small-logo {
+  display: none;
+}
+#yberri-dashboard .ant-layout-sider-collapsed .small-logo {
+  display: block;
+  margin-bottom: 35px;
+}
+#yberri-dashboard .ant-layout-sider-collapsed .logo {
+  display: none;
+}
+.ant-menu-item > a {
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-weight: 400;  
+}
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a {
+  color: #788195;
+}
+.ant-menu-dark .ant-menu-item-selected > a, .ant-menu-dark .ant-menu-item-selected > a:hover {
+  color: white;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  /* background-color: #4aa7f1; */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+img.App-logo {
+  height: 90px;
+  margin-top: -5px;
+}
+.small-logo .App-logo {
+  height: 55px;
+  margin-left: -10px;
+}
+
+ul.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-inline {
+  margin-top: 35px;
+}

@@ -1,0 +1,16 @@
+@import 'sidebar.css';
+
+#yberri-dashboard .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#yberri-dashboard .trigger:hover {
+  color: #1890ff;
+}
+.ant-layout-sider {
+  height: 100vh;
+}
