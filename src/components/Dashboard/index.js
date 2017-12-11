@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Icon } from 'antd';
 import SideMenu from './SideMenu';
+import Staff from '../Staff';
 
 const { Header, Sider, Content } = Layout;
 
@@ -35,7 +36,7 @@ class Dashboard extends Component {
             />
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            Content
+            <Staff />
           </Content>
         </Layout>
       </Layout>
