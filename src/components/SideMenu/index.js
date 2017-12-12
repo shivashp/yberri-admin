@@ -32,21 +32,21 @@ class SideMenu extends Component {
     //     <Route path={menu.path} component={menu.title.trim()} />
     // }
     render() {
-        let activeItem = this.props.activeItem?[this.props.activeItem]:["/"];
+        let activeItem = this.props.activeItem?[this.props.activeItem]:["/logo"];
         return (
-            <div>
-                <Link to="/">
-                    <div className="logo">
-                        <img src={logo} className="App-logo" alt="logo" />                        
-                    </div>
-                    <div className="small-logo">
-                        <img src={logoSmall} className="App-logo" alt="logo" />
-                    </div>
-                </Link>
-                <Menu theme="dark" mode="inline" selectedKeys={activeItem}>
+          <div>
+            <Link to="/logo">
+              <div className="logo">
+                  <img src={logo} className="App-logo" alt="logo" />                        
+              </div>
+              <div className="small-logo">
+                  <img src={logoSmall} className="App-logo" alt="logo" />
+              </div>
+            </Link>
+            <Menu theme="dark" mode="inline" selectedKeys={activeItem}>
                 {this.generateMenu(NavMenus)}
-                </Menu>
-            </div>
+            </Menu>
+          </div>
         );
     }
 }
