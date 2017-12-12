@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Table, Icon, Divider } from 'antd';
+import React from 'react';
+import DataTable from '../DataTable';
+import { Button } from 'antd';
 
 const columns = [{
   title: 'First Name',
   dataIndex: 'firstname',
   key: 'firstname',  
-  
 }, {
   title: 'Last Name',
   dataIndex: 'lastname',
@@ -18,6 +18,15 @@ const columns = [{
   title: 'Address',
   dataIndex: 'address',
   key: 'address',
+},{
+  title: 'Action',
+  key: 'action',
+  className: 'table-action',
+  render: (text, record) => (
+    <span>      
+      <Button type="danger">Delete</Button>      
+    </span>
+  ),
 }];
 
 const data = [{
@@ -64,10 +73,4 @@ const data = [{
   address: 'Sidney No. 1 Lake Park',
 }];
 
-export default () => (
-  <div>
-    <div className="section-heading">Staffs</div>
-    <Divider />
-    <Table columns={columns} dataSource={data} />
-  </div>
-);
+export default () => <DataTable name="Staff" columns={columns} data={data}/>

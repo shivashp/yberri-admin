@@ -4,13 +4,13 @@ import {
   Route
 } from 'react-router-dom';
 // import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import App from './components/App';
 
 class Root extends Component {
   render() {
     return (
       <Router>
-        <Route path="/" component={Dashboard} />
+        <Route path="/" component={App} />
       </Router>
     );
   }

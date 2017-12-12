@@ -16,13 +16,7 @@
         "title": "Items",
         "icon": "user",
         "path": "/items"
-    },
-    {
-        "id": 3,
-        "title": "Ecommerce",
-        "icon": "upload",
-        "path": "/designation"
-    },
+    },    
     {
         "id": 4,
         "title": "Staff",

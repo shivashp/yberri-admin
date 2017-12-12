@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Layout, Icon } from 'antd';
 import SideMenu from './SideMenu';
-import Staff from '../Staff';
+import Staff from './Staff';
+import ItemCategories from './ItemCategories';
+import Items from './Items';
+import {  
+  Route
+} from 'react-router-dom';
 
-const { Header, Sider, Content } = Layout;
+const { Header, Sider } = Layout;
 
-class Dashboard extends Component {
+class App extends Component {
   state = {
     collapsed: false,
   };
@@ -25,7 +30,7 @@ class Dashboard extends Component {
           collapsed={this.state.collapsed}
           id="yberri-sidebar"
         >
-          <SideMenu />
+          <SideMenu activeItem={this.props.location.pathname}/>
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
@@ -34,10 +39,11 @@ class Dashboard extends Component {
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
-          </Header>
-          <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <Staff />
-          </Content>
+          </Header>     
+          <Route exact path="/" component={Dashboard} />
+          <Route path="/staff" component={Staff} />    
+          <Route path="/item-categories" component={ItemCategories} />      
+          <Route path="/items" component={Items} />    
         </Layout>
       </Layout>
       </div>
@@ -45,4 +51,10 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+const Dashboard = () => (
+  <div className="content-paper">
+    This is dashboard
+  </div>
+)
+
+export default App;
