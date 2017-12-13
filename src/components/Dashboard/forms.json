@@ -1,0 +1,26 @@
+{
+  "buttons": [],
+  "fields": [
+    {
+      "id": 0,
+      "name": "email",
+      "validation": [
+        { "type": "notNull", "message": "Email is required!"}
+      ]
+    },
+    {
+      "id": 1,
+      "name": "name",
+      "validation": [
+        { "type": "notNull", "message": "name is required!"}
+      ]
+    },
+    {
+      "id": 1,
+      "name": "last name",
+      "validation": [
+        { "type": "notNull", "message": "name is required!"}
+      ]
+    }
+  ]
+}

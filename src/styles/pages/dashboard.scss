@@ -80,9 +80,23 @@
   }
   //Danger button
   .ant-btn-danger {
-    background-color: #f64744;
-    border-color: #f64744;
+    background-color: $danger;
+    border-color: $danger;
     color: #ffffff;
+  }
+
+  // Danger Tag
+  .tag-danger { 
+    background-color: $danger;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  // Success Tag
+  .tag-success {
+    background-color: $green;
+    color: white;
+    font-weight: 500;
   }
 }
 

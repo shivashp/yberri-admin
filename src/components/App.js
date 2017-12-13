@@ -7,6 +7,7 @@ import Items from './Items';
 import {  
   Route
 } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 const { Header, Sider } = Layout;
 
@@ -51,10 +52,5 @@ class App extends Component {
   }
 }
 
-const Dashboard = () => (
-  <div className="content-paper">
-    This is dashboard
-  </div>
-)
 
 export default App;
