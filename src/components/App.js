@@ -4,6 +4,7 @@ import SideMenu from './SideMenu';
 import Staff from './Staff';
 import ItemCategories from './ItemCategories';
 import Items from './Items';
+import Branches from './Branches';
 import {  
   Route
 } from 'react-router-dom';
@@ -45,7 +46,8 @@ class App extends Component {
             <Route exact path="/" component={Dashboard} />
             <Route path="/staff" component={Staff} />    
             <Route path="/item-categories" component={ItemCategories} />      
-            <Route path="/items" component={Items} />    
+            <Route path="/items" component={Items} />   
+            <Route path="/branches" component={Branches} /> 
           </div>
         </Layout>
       </Layout>

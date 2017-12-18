@@ -6,6 +6,12 @@
         "path": "/"
     },
     {
+        "id": 3,
+        "title": "Branches",
+        "icon": "global",
+        "path": "/branches"
+    },    
+    {
         "id": 1,
         "title": "Item Categories",
         "icon": "video-camera",

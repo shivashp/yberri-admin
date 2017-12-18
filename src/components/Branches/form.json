@@ -1,0 +1,13 @@
+{
+  "buttons": [],
+  "fields": [
+    {
+      "id": 0,
+      "name": "Branch Name",
+      "validation": [
+        { "required": true, "message": "Branch Name is required!"},
+        { "min": 3, "message": "Branch Name must be more than 3 characters!"}
+      ]
+    }    
+  ]
+}
