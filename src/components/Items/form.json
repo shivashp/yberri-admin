@@ -3,10 +3,23 @@
   "fields": [
     {
       "id": 0,
-      "name": "Category Name",
+      "type": "select",
+      "name": "Please select a category",
+      "options": [
+        {"value": "Breakfast", "name": "Breakfast"},
+        {"value": "lunch", "name": "Lunch"},        
+        {"value": "Dinner", "name": "Dinner"}
+      ],
       "validation": [
-        { "required": true, "message": "Category Name is required!"},
-        { "len": 3, "message": "Category Name must be more than 3 characters!"}
+        { "required": true, "message": "You must select a category!"}
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Item Name",
+      "validation": [
+        { "required": true, "message": "Item Name is required!"},
+        { "len": 3, "message": "Item Name must be more than 3 characters!"}
       ]
     }    
   ]

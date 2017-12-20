@@ -26,7 +26,7 @@ class CategoryForm extends React.Component {
           Add Item Category
         </div>
         <Divider />   
-        <Form onSubmit={this.handleSubmit} className="login-form">            
+        <Form onSubmit={this.handleSubmit}>            
           {this.generateForm()}
           <FormItem>                        
             <Button type="primary" htmlType="submit">

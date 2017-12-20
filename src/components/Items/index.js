@@ -1,6 +1,7 @@
 import React from 'react';
 import DataTable from '../DataTable';
 import { Button } from 'antd';
+import ItemForm from './ItemForm';
 
 const columns = [{
   title: 'Item Image',
@@ -75,14 +76,21 @@ const data = [{
   price: 90
 }];
 
-// class Items extends React.Component {
-//   render() {
-//     return (
-//       <div>
-//         <DataTable name="Item" columns={columns} data={data}/>
-//       </div>
-//     )
-//   }
-// }
-
-export default () => <DataTable name="Item" columns={columns} data={data}/>
+export default class ItemCategories extends React.Component {
+  state = {
+    menuOpen: false
+  }
+  handleClick = () => {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
+  }  
+  render() {
+    return (
+      <div>
+        { this.state.menuOpen && <ItemForm handleClick={this.handleClick}/> }        
+        <DataTable name="Item" columns={columns} data={data} handleClick={this.handleClick} menuOpen={this.state.menuOpen}/>
+      </div>
+    )
+  }
+}

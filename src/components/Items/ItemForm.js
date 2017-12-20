@@ -1,7 +1,8 @@
 import React from 'react';
-import { Form, Button, Divider } from 'antd';
+import { Form, Button, Divider, Select } from 'antd';
 import { FormField } from '../../utils';
 const FormItem = Form.Item;
+const Option = Select.Option;
 
 let form = require('./form.json');
 
@@ -23,14 +24,14 @@ class ItemForm extends React.Component {
     return (
       <div className="content-paper animated fadeIn"> 
         <div className="section-heading">
-          Add Item Category
+          Add Item
         </div>
         <Divider />   
-        <Form onSubmit={this.handleSubmit} className="login-form">            
+        <Form onSubmit={this.handleSubmit}>                   
           {this.generateForm()}
           <FormItem>                        
             <Button type="primary" htmlType="submit">
-              Save Item Category
+              Save Item
             </Button>
             <Button type="danger" htmlType="reset" style={{marginLeft: 10}} onClick={this.props.handleClick}>
               Cancel
