@@ -22,10 +22,8 @@ const DataTable = (props) => {
             <Col span={20}>
               {`${title}`}
             </Col>
-            <Col span={4}>          
-              <Link to="/">
-                <Button type="primary" style={{float:'right'}}>Add {name}</Button>
-              </Link>
+            <Col span={4}>                        
+              <Button type="primary" style={{float:'right'}} onClick={props.handleClick}>Add {name}</Button>              
             </Col>        
           </Row>
         </div>
@@ -41,7 +39,8 @@ const DataTable = (props) => {
 DataTable.defaultProps = {
   id: '',
   data: [],
-  animation: 'fadeIn'
+  animation: 'fadeIn',
+  menuOpen: false
 }
 
 DataTable.propTypes = {

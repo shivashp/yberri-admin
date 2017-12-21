@@ -40,11 +40,13 @@ class App extends Component {
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
-          </Header>     
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/staff" component={Staff} />    
-          <Route path="/item-categories" component={ItemCategories} />      
-          <Route path="/items" component={Items} />    
+          </Header> 
+          <div className="main-content">    
+            <Route exact path="/" component={Dashboard} />
+            <Route path="/staff" component={Staff} />    
+            <Route path="/item-categories" component={ItemCategories} />      
+            <Route path="/items" component={Items} />    
+          </div>
         </Layout>
       </Layout>
       </div>

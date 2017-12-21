@@ -1,0 +1,13 @@
+{
+  "buttons": [],
+  "fields": [
+    {
+      "id": 0,
+      "name": "Category Name",
+      "validation": [
+        { "required": true, "message": "Category Name is required!"},
+        { "len": 3, "message": "Category Name must be more than 3 characters!"}
+      ]
+    }    
+  ]
+}

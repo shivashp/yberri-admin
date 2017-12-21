@@ -75,4 +75,14 @@ const data = [{
   price: 90
 }];
 
+// class Items extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <DataTable name="Item" columns={columns} data={data}/>
+//       </div>
+//     )
+//   }
+// }
+
 export default () => <DataTable name="Item" columns={columns} data={data}/>

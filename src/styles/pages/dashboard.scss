@@ -12,6 +12,13 @@
 .ant-layout-sider {
   height: 100vh;
 }
+.ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content { 
+  overflow-y: hidden;
+  height: 100vh;
+}
+.main-content {
+  overflow-y: scroll;
+}
 #yberri-theme {
   .ant-table-thead > tr > th {
     color: $grey-text;
