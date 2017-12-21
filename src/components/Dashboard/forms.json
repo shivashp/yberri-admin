@@ -3,23 +3,24 @@
   "fields": [
     {
       "id": 0,
+      "name": "username",
+      "validation": [
+        { "required": true, "message": "Username is required!"}
+      ]
+    },
+    {
+      "id": 1,
       "name": "email",
       "validation": [
-        { "type": "notNull", "message": "Email is required!"}
+        { "type": "email", "message": "The input is not valid E-mail!" },
+        { "required": true, "message": "Please input your E-mail!" }
       ]
     },
     {
-      "id": 1,
-      "name": "name",
-      "validation": [
-        { "type": "notNull", "message": "name is required!"}
-      ]
-    },
-    {
-      "id": 1,
+      "id": 2,
       "name": "last name",
       "validation": [
-        { "type": "notNull", "message": "name is required!"}
+        { "required": true, "message": "Last Name is required!"}
       ]
     }
   ]

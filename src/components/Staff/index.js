@@ -2,6 +2,11 @@ import React from 'react';
 import DataTable from '../DataTable';
 import { Button, Tag } from 'antd';
 
+let handleTagChange = (record, text, index) => {  
+  console.log("Record", record);  
+  console.log("Index: ", index);  
+}
+
 const columns = [{
   title: 'First Name',
   dataIndex: 'firstname',
@@ -21,8 +26,8 @@ const columns = [{
 }, {
   title: 'Status',
   key: 'status',
-  render: (text, record) => (
-    <Tag className={record.status?'tag-success':'tag-danger'}>{record.status ? 'Active': 'Inactive'}</Tag>
+  render: (text, record, index) => (
+    <Tag className={record.status?'tag-success':'tag-danger'} onClick={() => handleTagChange(record, text, index)}>{record.status ? 'Active': 'Inactive'}</Tag>
   ),
 }, {
   title: 'Action',
