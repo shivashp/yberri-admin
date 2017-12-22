@@ -1,6 +1,7 @@
 import React from 'react';
 import DataTable from '../DataTable';
 import { Button, Tag } from 'antd';
+import StaffForm from './StaffForm';
 
 let handleTagChange = (record, text, index) => {  
   console.log("Record", record);  
@@ -91,4 +92,21 @@ const data = [{
   status: true,
 }];
 
-export default () => <DataTable name="Staff" columns={columns} data={data}/>
+export default class ItemCategories extends React.Component {
+  state = {
+    menuOpen: false
+  }
+  handleClick = () => {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
+  }  
+  render() {
+    return (
+      <div>
+        { this.state.menuOpen && <StaffForm handleClick={this.handleClick}/> }        
+        <DataTable name="Staff" columns={columns} data={data} handleClick={this.handleClick} menuOpen={this.state.menuOpen}/>
+      </div>
+    )
+  }
+}

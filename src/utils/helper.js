@@ -67,8 +67,8 @@ class FormField extends React.Component {
           <Input placeholder={title} />
         )
       },
-      select: () => {
-        let options = field.options;      
+      select: () => {        
+        let options = field.options;                           
         return (
         <Select placeholder={title}>
           { options.map((option, index) => <Option key={index} value={option.value}>{option.name}</Option>)}              

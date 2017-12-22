@@ -12,7 +12,7 @@
     {
       "id": 1,
       "type": "select",
-      "name": "Please select a category",
+      "name": "Please select a category",      
       "options": [
         {"value": "Breakfast", "name": "Breakfast"},
         {"value": "lunch", "name": "Lunch"},        
