@@ -1,8 +1,7 @@
 import React from 'react';
-import { Form, Button, Divider, Select } from 'antd';
+import { Form, Button, Divider } from 'antd';
 import { FormField } from '../../utils';
 const FormItem = Form.Item;
-const Option = Select.Option;
 
 let form = require('./form.json');
 

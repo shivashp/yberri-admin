@@ -3,6 +3,14 @@
   "fields": [
     {
       "id": 0,
+      "name": "Item Image",
+      "type": "image",
+      "validation": [
+        { "required": true, "message": "Item Name is required!"}      
+      ]
+    },    
+    {
+      "id": 1,
       "type": "select",
       "name": "Please select a category",
       "options": [
@@ -15,7 +23,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Item Name",
       "validation": [
         { "required": true, "message": "Item Name is required!"},

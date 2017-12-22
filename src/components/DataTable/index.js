@@ -3,7 +3,6 @@ import {
   Table, Divider, Row, Col, Button, Layout
 } from 'antd';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 const { Content } = Layout;
 
