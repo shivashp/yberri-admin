@@ -22,6 +22,7 @@ class App extends Component {
     });
   }
   render() {
+    
     return (
       <div id="yberri-dashboard">
       <Layout>
@@ -43,11 +44,11 @@ class App extends Component {
             />
           </Header> 
           <div className="main-content">    
-            <Route exact path="/" component={Dashboard} />
-            <Route path="/staff" component={Staff} />    
-            <Route path="/item-categories" component={ItemCategories} />      
-            <Route path="/items" component={Items} />   
-            <Route path="/branches" component={Branches} /> 
+            <Route exact path={`${this.props.match.url}`} component={Dashboard} />
+            <Route path={`${this.props.match.url}/staff`} component={Staff} />    
+            <Route path={`${this.props.match.url}/item-categories`} component={ItemCategories} />      
+            <Route path={`${this.props.match.url}/items`} component={Items} />   
+            <Route path={`${this.props.match.url}/branches`} component={Branches} /> 
           </div>
         </Layout>
       </Layout>

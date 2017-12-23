@@ -46,8 +46,10 @@ class FormField extends React.Component {
     let props = this.props;
     let field = props.fieldAttribute;
     let type = field.type || 'input';  
+    let icon = field.icon;
     let title = func.titleCase(field.name);
     const { getFieldDecorator } = props.form;
+    const prefix = icon?<Icon type={icon} style={{ color: 'rgba(0,0,0,.25)' }} />:null
 
     /* ---------------------------- Image -------------------------------- */
     const uploadButton = (
@@ -64,7 +66,7 @@ class FormField extends React.Component {
     const Types = {
       input: () => {      
         return (
-          <Input placeholder={title} />
+          <Input placeholder={title} prefix={prefix} />
         )
       },
       select: () => {        

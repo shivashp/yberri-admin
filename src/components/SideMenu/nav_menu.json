@@ -3,30 +3,30 @@
         "id": 0,
         "title": "Dashboard",
         "icon": "home",
-        "path": "/"
+        "path": "/dashboard"
     },
     {
         "id": 3,
         "title": "Branches",
         "icon": "global",
-        "path": "/branches"
+        "path": "/dashboard/branches"
     },    
     {
         "id": 1,
         "title": "Item Categories",
         "icon": "video-camera",
-        "path": "/item-categories"
+        "path": "/dashboard/item-categories"
     },
     {
         "id": 2,
         "title": "Items",
         "icon": "user",
-        "path": "/items"
+        "path": "/dashboard/items"
     },    
     {
         "id": 4,
         "title": "Staff",
         "icon": "video-camera",
-        "path": "/staff"
+        "path": "/dashboard/staff"
     }
 ]
